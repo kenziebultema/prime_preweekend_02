@@ -22,6 +22,9 @@ function clickyButton(){
 }
 
 function logData(data){
-    console.log(data);
+    for(var i = 0; i < (data.people).length; i++) {
+        var person = data.people[i];
+        $('.container').append('<p>' + person + '1</p>');
+    }
 }
 
